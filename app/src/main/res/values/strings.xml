@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">call_center_driver_app</string>
+
+<!--    login screen-->
+
+    <string name="login_account_field">Your email</string>
+    <string name="login_password_field">Password</string>
+    <string name="login_goto_signup_link">Haven't had an account</string>
+    <string name="login_login_button">Let's go</string>
+
+<!--    login screen-->
+
+<!--    signup screen-->
+
+    <string name="signup_email_field">Email</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_confirm_password">Confirm password</string>
+    <string name="signup_phone_number">Your phone</string>
+    <string name="signup_goto_login_link">Have had an account</string>
+    <string name="signup_signup_button">Sign up now!</string>
+
+<!--    signup screen -->
+
+<!--    main screen-->
+
+    <string name="main_bottom_nav_home">Home</string>
+    <string name="main_bottom_nav_notification">Notification</string>
+    <string name="main_bottom_nav_account">Account</string>
+
+<!--    main screen-->
+
+
+
 </resources>
