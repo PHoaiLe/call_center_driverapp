@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">call_center_driver_app</string>
 
-<!--    login screen-->
+    <!--    login screen-->
 
     <string name="login_account_field">Your email</string>
     <string name="login_password_field">Password</string>
-    <string name="login_goto_signup_link">Haven't had an account</string>
-    <string name="login_login_button">Let's go</string>
+    <string name="login_goto_signup_link">Havenot had an account</string>
+    <string name="login_login_button">Login</string>
 
-<!--    login screen-->
+    <!--    login screen-->
 
-<!--    signup screen-->
+    <!--    signup screen-->
 
     <string name="signup_email_field">Email</string>
     <string name="signup_password">Password</string>
@@ -19,16 +19,33 @@
     <string name="signup_goto_login_link">Have had an account</string>
     <string name="signup_signup_button">Sign up now!</string>
 
-<!--    signup screen -->
+    <!--    signup screen -->
 
-<!--    main screen-->
+    <!--    main screen-->
 
     <string name="main_bottom_nav_home">Home</string>
     <string name="main_bottom_nav_notification">Notification</string>
     <string name="main_bottom_nav_account">Account</string>
 
-<!--    main screen-->
+    <!--    main screen-->
 
+    <!--home-->
 
+    <string name="home_handling_task">Handling task</string>
+    <string name="home_task_customername">Customer name</string>
+    <string name="home_task_from">From:</string>
+    <string name="home_task_to">To:</string>
+    <string name="home_task_total">Total:</string>
+    <string name="home_task_schedule">Schedule:</string>
+    <string name="home_task_distance">Distance:</string>
+    <string name="home_task_vnd">VND</string>
+    <string name="home_task_km">KM</string>
+    <string name="home_task_no_available_handling_task">Not Available</string>
 
+    <string name="home_available_task">Available tasks</string>
+
+    <string name="home_available_task_accept_task_button">Get it</string>
+    <string name="home_available_task_deny_task_button">Deny</string>
+
+    <!--home-->
 </resources>

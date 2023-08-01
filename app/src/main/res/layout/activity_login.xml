@@ -2,8 +2,10 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_marginHorizontal="20dp">
+    android:layout_marginHorizontal="20dp"
+    tools:context=".activities.login.Login">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -58,7 +60,7 @@
                 android:textStyle="bold"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:gravity="center_vertical"
-                android:layout_marginRight="40dp"
+                android:layout_marginRight="35dp"
                 />
 
             <com.google.android.material.button.MaterialButton
