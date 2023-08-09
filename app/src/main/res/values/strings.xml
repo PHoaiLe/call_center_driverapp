@@ -12,6 +12,7 @@
 
     <!--    signup screen-->
 
+    <string name="signup_name_field">Your name</string>
     <string name="signup_email_field">Email</string>
     <string name="signup_password">Password</string>
     <string name="signup_confirm_password">Confirm password</string>
@@ -48,4 +49,10 @@
     <string name="home_available_task_deny_task_button">Deny</string>
 
     <!--home-->
+
+<!--    server-->
+    <string name="server_url">localhost:7090/driver/</string>
+    <string name="DATABASE_ACCESS_DRIVER_INFO_COLLECTION">driver</string>
+<!--    server-->
+
 </resources>

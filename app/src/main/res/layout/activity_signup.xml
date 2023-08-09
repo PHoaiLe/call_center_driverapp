@@ -2,15 +2,28 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_marginHorizontal="20dp"
-    >
+    android:layout_marginHorizontal="20dp">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:text="@string/signup_name_field"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
@@ -23,6 +36,7 @@
             android:id="@+id/signup_email_input"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:inputType="textEmailAddress"
             />
 
         <com.google.android.material.textview.MaterialTextView
@@ -64,7 +78,7 @@
             android:id="@+id/signup_phone_input"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:inputType="textPassword"
+            android:inputType="phone"
             />
 
 
@@ -76,22 +90,23 @@
             android:layout_gravity="center_horizontal"
             >
 
-            <com.google.android.material.textview.MaterialTextView
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/signup_goto_login_link"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:clickable="true"
                 android:text="@string/signup_goto_login_link"
-                android:textSize="16sp"
+                android:textSize="10sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:gravity="center_vertical"
                 android:layout_marginRight="35dp"
+                app:backgroundTint="@color/white"
                 android:contentDescription="@string/signup_goto_login_link"
                 />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/login_login_button"
+                android:id="@+id/signup_signup_button"
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
                 android:text="@string/signup_signup_button"

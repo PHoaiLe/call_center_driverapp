@@ -16,6 +16,9 @@ import com.example.call_center_driver_app.MainActivity;
 import com.example.call_center_driver_app.R;
 import com.google.android.material.textview.MaterialTextView;
 
+import javax.inject.Singleton;
+
+@Singleton
 public class Home extends Fragment {
 
     //ensure thread-safe Singleton with lazy load

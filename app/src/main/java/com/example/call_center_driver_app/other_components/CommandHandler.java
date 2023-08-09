@@ -1,5 +1,7 @@
 package com.example.call_center_driver_app.other_components;
 
+import com.example.call_center_driver_app.activities.login.Login;
+import com.example.call_center_driver_app.constants.GlobalCommandID;
 import com.example.call_center_driver_app.my_interfaces.ChainHandler;
 import com.example.call_center_driver_app.my_interfaces.Command;
 
@@ -7,22 +9,23 @@ public class CommandHandler implements ChainHandler {
     private ChainHandler next;
     private Command command;
 
-    private int commandID;
+    private GlobalCommandID commandID;
 
-    CommandHandler(int recogCommandID)
+    public CommandHandler(GlobalCommandID regCommandID)
     {
         next = null;
         command = null;
-        commandID = recogCommandID;
+        commandID = regCommandID;
     }
 
+
     @Override
-    public void handle(int commandIDToExecute) {
-        if(commandID == commandIDToExecute)
+    public void handle(GlobalCommandID commandIDToExecute) {
+        if(commandID == commandIDToExecute && command != null)
         {
             command.execute();
         }
-        if(next != null)
+        else if(next != null)
         {
             next.handle(commandIDToExecute);
         }

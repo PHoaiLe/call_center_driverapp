@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 import com.example.call_center_driver_app.activities.login.Login;
 import com.example.call_center_driver_app.main_fragments.home.Home;
+import com.example.call_center_driver_app.repositories.FirebaseRepository;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends FragmentActivity {
@@ -37,9 +38,12 @@ public class MainActivity extends FragmentActivity {
     protected void onStart()
     {
         super.onStart();
-
-        Intent startLoginIntent = new Intent(MainActivity.this, Login.class);
-        startActivity(startLoginIntent);
-        finish();
+        FirebaseRepository firebaseRepository = ((GlobalResources) getApplication()).getFirebaseRepository();
+        if(firebaseRepository.getCurrentUser() == null)
+        {
+            Intent startLoginIntent = new Intent(MainActivity.this, Login.class);
+            startActivity(startLoginIntent);
+            //finish();
+        }
     }
 }
