@@ -2,7 +2,8 @@ package com.example.call_center_driver_app;
 
 import android.app.Application;
 
-import com.example.call_center_driver_app.repositories.FirebaseRepository;
+import com.example.call_center_driver_app.repositories.call_center_server.CallCenterRepository;
+import com.example.call_center_driver_app.repositories.firebase.FirebaseRepository;
 
 import javax.inject.Singleton;
 
@@ -17,7 +18,10 @@ import javax.inject.Singleton;
 @Singleton
 public class GlobalResources extends Application
 {
+    @Singleton
     private FirebaseRepository firebaseRepository;
+    @Singleton
+    private CallCenterRepository callCenterRepository;
 
 
     @Override

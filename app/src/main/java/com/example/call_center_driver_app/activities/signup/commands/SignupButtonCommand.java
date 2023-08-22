@@ -8,7 +8,7 @@ import com.example.call_center_driver_app.activities.signup.Signup;
 import com.example.call_center_driver_app.activities.signup.constants.SignupConstants;
 import com.example.call_center_driver_app.components.MyDriver;
 import com.example.call_center_driver_app.my_interfaces.Command;
-import com.example.call_center_driver_app.repositories.FirebaseRepository;
+import com.example.call_center_driver_app.repositories.firebase.FirebaseRepository;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class SignupButtonCommand implements Command {

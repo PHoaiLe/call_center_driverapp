@@ -8,7 +8,7 @@ import com.example.call_center_driver_app.GlobalResources;
 import com.example.call_center_driver_app.activities.login.Login;
 import com.example.call_center_driver_app.activities.login.constants.LoginConstants;
 import com.example.call_center_driver_app.my_interfaces.Command;
-import com.example.call_center_driver_app.repositories.FirebaseRepository;
+import com.example.call_center_driver_app.repositories.firebase.FirebaseRepository;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class LoginButtonCommand implements Command {

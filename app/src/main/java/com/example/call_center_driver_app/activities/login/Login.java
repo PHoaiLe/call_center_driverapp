@@ -2,13 +2,10 @@ package com.example.call_center_driver_app.activities.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.call_center_driver_app.GlobalResources;
-import com.example.call_center_driver_app.MainActivity;
 import com.example.call_center_driver_app.R;
 import com.example.call_center_driver_app.activities.login.commands.LoginButtonCommand;
 import com.example.call_center_driver_app.activities.login.commands.LoginLinkToSignUp;
@@ -17,12 +14,8 @@ import com.example.call_center_driver_app.constants.GlobalCommandID;
 import com.example.call_center_driver_app.my_interfaces.ChainHandler;
 import com.example.call_center_driver_app.my_interfaces.Command;
 import com.example.call_center_driver_app.other_components.CommandHandler;
-import com.example.call_center_driver_app.repositories.FirebaseRepository;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textview.MaterialTextView;
-import com.google.firebase.auth.GetTokenResult;
 
 
 public class Login extends AppCompatActivity {

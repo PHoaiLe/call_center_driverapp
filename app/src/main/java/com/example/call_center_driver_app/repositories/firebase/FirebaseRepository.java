@@ -1,14 +1,12 @@
-package com.example.call_center_driver_app.repositories;
+package com.example.call_center_driver_app.repositories.firebase;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.os.Handler;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 
 import com.example.call_center_driver_app.R;
-import com.example.call_center_driver_app.components.MyDriver;
 import com.example.call_center_driver_app.components.User;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -16,7 +14,6 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.GetTokenResult;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.jetbrains.annotations.NotNull;
@@ -48,6 +45,8 @@ public class FirebaseRepository {
             firebaseAuth = FirebaseAuth.getInstance();
             firestore = FirebaseFirestore.getInstance();
             handler = new Handler();
+
+
         }
         catch (Exception ex)
         {

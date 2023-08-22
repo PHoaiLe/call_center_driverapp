@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 import com.example.call_center_driver_app.activities.login.Login;
 import com.example.call_center_driver_app.main_fragments.home.Home;
-import com.example.call_center_driver_app.repositories.FirebaseRepository;
+import com.example.call_center_driver_app.repositories.firebase.FirebaseRepository;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends FragmentActivity {
